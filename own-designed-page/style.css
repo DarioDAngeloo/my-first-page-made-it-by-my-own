@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap");
+
+:root {
+  --backcolor: #194d3a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.layout {
+  width: 100%;
+  /* border: 2px red solid; */
+  height: 2000px;
+  display: grid;
+  grid-template-columns: 1 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas:
+    "nav"
+    "section1"
+    "section1"
+    "section2"
+    "section2"
+    "section2"
+    "section3"
+    "section3"
+    "section3"
+    "footer";
+  background-image: linear-gradient(-225deg, #b7f8db 0%, #50a7c2 100%);
+}
+
+/* ----------------- HEADER NAVVVVVVV-------- */
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 15px;
+  /* margin: 0 auto; */
+  padding: 0 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: #08af7a2f;
+  height: 150px;
+}
+
+.nav__title {
+  font-size: 2.7em;
+  color: #d9fbeb;
+  font-weight: 700;
+}
+
+.nav__ul {
+  list-style: none;
+  display: flex;
+  margin-top: 5px;
+}
+
+.nav__cta {
+  text-decoration: none;
+  font-size: 1.1em;
+  margin: 15px;
+  color: var(--backcolor);
+  font-weight: 400;
+  padding: 15px;
+  transition: all 200ms ease;
+}
+
+.nav__cta:hover {
+  border: white 1px solid;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.188);
+}
+
+/* -------SECTION BELOW OF NAV MENU----------- */
+/* --- */
+/* -- */
+/* ---*/
+/* -- */
+/* ---*/
+/* -- */
+/* ---*/
+/* -- */
+/* ---*/
+/* -- */
+/* ---*/
+/* ---------SECTION 1---------------------- */
+.section1 {
+  grid-area: section1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  margin: 0 auto;
+  /* margin-top: 0px; */
+  padding: 0 30px;
+}
+
+.section1__title {
+  font-size: 1.8em;
+  letter-spacing: 1.4px;
+  line-height: 1.2;
+  color: #194d3a;
+  font-weight: 500;
+}
+
+.section1__p {
+  margin-top: 15px;
+  letter-spacing: 1.1px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 300;
+  color: #194d3a;
+}
+
+.section1__cta {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: #50bec2;
+  padding: 15px 25px;
+  color: white;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.section1__img {
+  margin-top: 25px;
+  width: 250px;
+}
+
+/* ---------SECTION 1------------- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* ---------SECTION 2------------- */
+
+.section2 {
+  grid-area: section2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  /* background-color: #c6eebc24; */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.images__cta {
+  margin-top: 25px;
+}
+
+.section2__title {
+  font-size: 1.4em;
+  letter-spacing: 1.4px;
+  color: var(--backcolor);
+}
+.section2__p {
+  margin: 10px 30px 10px 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  color: var(--backcolor);
+  font-weight: 300;
+}
+
+.section2__p2 {
+  /* margin-top: 25px; */
+  letter-spacing: 1.4px;
+  text-align: center;
+  line-height: 1.2;
+  margin: 25px 30px 10px 30px;
+  color: var(--backcolor);
+  font-weight: 300;
+}
+
+.images__cta {
+  width: 150px;
+}
+
+.images__cta--2 {
+  width: 260px;
+}
+
+/* ---------SECTION 2------------- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* ---------SECTION 3------------- */
+.section3 {
+  grid-area: section3;
+  margin: 0 30px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section3__title {
+  margin: 20px 0;
+  color: #234270;
+  letter-spacing: 1.8px;
+  line-height: 1.8;
+  font-weight: 700;
+}
+
+.section3__figures {
+  display: inline-block;
+  margin: 15px;
+  gap: 15px;
+}
+
+.fig__img1 {
+  width: 90px;
+  margin: 8px;
+}
+
+.fig__img2 {
+  width: 49px;
+  margin: 8px;
+}
+
+.fig__img3 {
+  width: 50px;
+  margin: 18px;
+}
+.fig__img4 {
+  width: 50px;
+  margin: 18px;
+}
+.fig__img5 {
+  width: 40px;
+  margin: 18px;
+}
+
+.fig__img6 {
+  width: 75px;
+  margin: 10px;
+}
+.fig__img7 {
+  width: 80px;
+  margin-left: 105px;
+}
+
+/* ---------SECTION 3------------- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* --- */
+/* ---------footer------------- */
+.footer {
+  grid-area: footer;
+  background-color: #2a667b44;
+  height: 100px;
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer__title {
+  font-size: 1.1em;
+  margin-top: 10px;
+  color: #05132b;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.footer__social {
+  /* max-width: 100%; */
+  justify-content: space-between;
+  display: flex;
+  padding: 15px;
+}
+
+.social__cta {
+  margin: 0 25px 0 25px;
+}
+
+@media (min-width: 880px) {
+  .layout {
+    width: 100%;
+    height: 1300px;
+    display: grid;
+    grid-template-columns: 5 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "nav nav nav nav nav"
+      "section1 section1 section1 section2 section2"
+      "section1 section1 section1 section2 section2"
+      "section3 section3 section3 section3 section3"
+      "footer footer footer footer footer";
+  }
+
+  .section1 {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px;
+  }
+
+  .section1__p {
+    margin: 10px 70px 10px 70px;
+  }
+
+  .section2 {
+    margin: 0 140px 0 00px;
+  }
+
+  .section2__p {
+    margin: 10px 50px;
+  }
+
+  .section2__p2 {
+    margin: 10px 50px;
+  }
+
+  .section3 {
+    margin: 50px 0 0s 0px;
+    background-position: center;
+  }
+
+  .section3__title {
+    font-size: 40px;
+  }
+
+  .fig__img7 {
+    width: 140px;
+    margin-left: 10px;
+    margin-bottom: 9px;
+    margin-right: 0px;
+  }
+}
